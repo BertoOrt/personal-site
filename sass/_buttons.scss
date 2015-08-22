@@ -8,7 +8,7 @@
   background: $white;
   -webkit-border-radius: 14;
   -moz-border-radius: 14;
-  border-radius: 14px;
+  border-radius: 10px;
   font-family: Arial;
   color: $black;
   font-size: 49px;
@@ -30,4 +30,8 @@
 
 .button:first-child {
   margin-right: 4%;
+}
+
+#arrows {
+  background: none;
 }

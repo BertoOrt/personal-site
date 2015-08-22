@@ -1,4 +1,4 @@
-body {
+html {
   background: $white;
 }
 
@@ -7,15 +7,23 @@ header {
   background: $primary;
 }
 
+main {
+  color: $black;
+  background: $white;
+}
+
 .header {
   width: 100%;
   height: 130px;
 }
 
-main .container {
+
+.image {
   width: 100%;
   height: 500px;
   display: none;
+  padding: 2%;
+  box-sizing: border-box;
   background-image: url('./../assets/circuit.jpeg');
 }
 
@@ -25,11 +33,10 @@ main .container {
   padding: 3%;
   font-size: 200%;
   margin: 0 auto;
-  margin-top: 2%;
   margin-bottom: 2%;
   color: $black;
   background: $white;
-  border-radius: 10px;
+  border-radius: 5px;
   box-sizing: border-box;
 }
 
@@ -38,13 +45,22 @@ main .container {
 }
 .right {
   float: right;
-}
-
-.right {
   width: 50%;
 }
 
 .nav-tab {
   float:right;
   margin-left: 3%;
+}
+
+#image {
+  width: 100%;
+  height: 600px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+#resize img {
+  width: 100%;
+  height: 600px;
 }
