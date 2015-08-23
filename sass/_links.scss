@@ -1,4 +1,20 @@
-a, a:focus, a:focus, a:active, a:visited, a:link {
-   color: $white !important;
-   text-decoration: none !important;
+a, a:focus, a:active, a:visited, a:link {
+   color: $white;
+   text-decoration: none;
+}
+
+a:hover,a:focus {
+  color: $black;
+}
+
+.atitle:hover {
+  color: $white;
+}
+
+#bottomLogos a, #bottomLogos a:focus, #bottomLogos a:active, #bottomLogos a:visited, #bottomLogos a:link {
+  color: $black;
+}
+
+#bottomLogos a:hover {
+  color: $primary;
 }

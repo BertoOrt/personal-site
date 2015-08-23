@@ -19,25 +19,22 @@
 <body ng-controller='index'>
   <header>
     <div class="container">
-      <div class="header">
+      <div id='header'class="header">
         <div class="left">
-          <h1>ROBERTO ORTEGA</h1>
-          <div class="logos">
+          <a class='atitle' href="http://bertoort.com">
+            <h1 class='title'>ROBERTO ORTEGA</h1>
+          </a>
+          <div id="logos">
             <a href="http://github.com/bertoort" target="_blank">
-              <i id='logo' class="fa fa-github-square"></i>
+              <i class="logo fa fa-github-square"></i>
+            </a>
+            <a href="mailto:bertoort@gmail.com">
+              <i class="logo fa fa-envelope"></i>
             </a>
             <a href="http://linkedin.com/in/bertoort" target="_blank">
-              <i id='logo' class="fa fa-linkedin"></i>
-            </a>
-            <a href="http://bertoort.com">
-              <i id='logo' class="fa fa-globe"></i>
+              <i class="logo fa fa-linkedin"></i>
             </a>
           </div>
-        </div>
-        <div ng-show="regular" class="nav-tab Resume">
-          <a href="#resume">
-            <h1>Resume</h1>
-          </a>
         </div>
         <div ng-show="regular" class="nav-tab projects">
           <a href="#projects">
@@ -53,6 +50,8 @@
     </div>
   </header>
   <main>
+    <div class="spacer">
+    </div>
     <div class="image">
       <div class="information">
         <h2>Welcome!</h2>
@@ -65,11 +64,11 @@
     </div>
     <div class="container">
       <div ng-show='regular' id="about">
-        <h1>About</h1>
+        <div class="me">
+          <img class='me' src="./css/assets/me.jpg" alt="me" />
+        </div>
       </div>
       <div ng-show='regular' id="projects">
-        <h1>Projects</h1>
-
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
           <!-- Indicators -->
           <ol class="carousel-indicators">
@@ -141,7 +140,6 @@
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
               </div>
             </div><!-- /.modal-content -->
           </div><!-- /.modal-dialog -->
@@ -183,7 +181,6 @@
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
               </div>
             </div><!-- /.modal-content -->
           </div><!-- /.modal-dialog -->
@@ -225,15 +222,22 @@
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
               </div>
             </div><!-- /.modal-content -->
           </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
       </div>
-      <div ng-show='regular' id="resume">
-        <h1>Resume</h1>
-      </div>
+    </div>
+    <div ng-show="regular"id="bottomLogos">
+      <a href="http://github.com/bertoort" target="_blank">
+        <i class="logo fa fa-github-square"></i>
+      </a>
+      <a href="mailto:bertoort@gmail.com">
+        <i class="logo fa fa-envelope"></i>
+      </a>
+      <a href="http://linkedin.com/in/bertoort" target="_blank">
+        <i class="logo fa fa-linkedin"></i>
+      </a>
     </div>
   </main>
   <footer></footer>

@@ -8,7 +8,6 @@ $(document).ready(function () {
   $( "#everyone" ).click(function() {
     $( ".image" ).slideUp(1000);
   });
-  $('.logos').fadeIn(1000)
 
   $('.image').mousemove(function(e){
   var amountMovedX = (e.pageX * - (1 / 80));

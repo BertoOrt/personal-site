@@ -1,10 +1,5 @@
-html {
+html, body   {
   background: $white;
-}
-
-header {
-  color: $white;
-  background: $primary;
 }
 
 main {
@@ -12,11 +7,17 @@ main {
   background: $white;
 }
 
-.header {
+header {
+  color: $white;
+  background: $primary;
   width: 100%;
-  height: 130px;
-}
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 70px;
+  box-shadow: 0 2px 2px -2px gray;
 
+}
 
 .image {
   width: 100%;
@@ -40,16 +41,22 @@ main {
   box-sizing: border-box;
 }
 
-.left {
+#header .left {
   float: left;
-}
-.right {
-  float: right;
   width: 50%;
+}
+.left {
+  border-radius: 3px;
+}
+
+.right {
+  border-radius: 3px;
+  float: right;
 }
 
 .nav-tab {
   float:right;
+  margin-top: .7%;
   margin-left: 3%;
 }
 
@@ -63,4 +70,37 @@ main {
 #resize img {
   width: 100%;
   height: 600px;
+}
+
+header #logos, .title {
+  display: inline-block;
+}
+
+.title {
+  margin-right: 3%;
+}
+
+.spacer {
+  height: 70px;
+  width: 100%;
+}
+
+#logos {
+  width: 30%;
+}
+
+#bottomLogos {
+  font-size: 200%;
+  width: 10%;
+  margin: 0 auto;
+  margin-top: 2%;
+  height: 70px;
+}
+
+#myCarousel {
+  z-index: 1;
+}
+
+.me {
+  border-radius: 100px;
 }

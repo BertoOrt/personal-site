@@ -70,6 +70,7 @@ h1, h2, h3, h4 {
 
 h1 {
   margin-top: 2%;
+  margin-bottom: 2%;
   font-size: 2.441em; }
 
 h2 {
@@ -85,10 +86,9 @@ h4 {
 small, .font_small {
   font-size: 0.8em; }
 
-#logo {
-  color: #f0e6ef;
-  font-size: 250%;
-  padding-right: 3%; }
+#logos .logo {
+  font-size: 200%;
+  padding-left: 3%; }
 
 .button {
   background: #f0e6ef;
@@ -117,24 +117,38 @@ small, .font_small {
 #arrows {
   background: none; }
 
-a, a:focus, a:focus, a:active, a:visited, a:link {
-  color: #f0e6ef !important;
-  text-decoration: none !important; }
-
-html {
-  background: #f0e6ef; }
-
-header {
+a, a:focus, a:active, a:visited, a:link {
   color: #f0e6ef;
-  background: #019A79; }
+  text-decoration: none; }
+
+a:hover, a:focus {
+  color: #46494C; }
+
+.atitle:hover {
+  color: #f0e6ef; }
+
+#bottomLogos a, #bottomLogos a:focus, #bottomLogos a:active, #bottomLogos a:visited, #bottomLogos a:link {
+  color: #46494C; }
+
+#bottomLogos a:hover {
+  color: #019A79; }
+
+html, body {
+  background: #f0e6ef; }
 
 main {
   color: #46494C;
   background: #f0e6ef; }
 
-.header {
+header {
+  color: #f0e6ef;
+  background: #019A79;
   width: 100%;
-  height: 130px; }
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 70px;
+  box-shadow: 0 2px 2px -2px gray; }
 
 .image {
   width: 100%;
@@ -156,15 +170,20 @@ main {
   border-radius: 5px;
   box-sizing: border-box; }
 
+#header .left {
+  float: left;
+  width: 50%; }
+
 .left {
-  float: left; }
+  border-radius: 3px; }
 
 .right {
-  float: right;
-  width: 50%; }
+  border-radius: 3px;
+  float: right; }
 
 .nav-tab {
   float: right;
+  margin-top: .7%;
   margin-left: 3%; }
 
 #image {
@@ -176,6 +195,32 @@ main {
 #resize img {
   width: 100%;
   height: 600px; }
+
+header #logos, .title {
+  display: inline-block; }
+
+.title {
+  margin-right: 3%; }
+
+.spacer {
+  height: 70px;
+  width: 100%; }
+
+#logos {
+  width: 30%; }
+
+#bottomLogos {
+  font-size: 200%;
+  width: 10%;
+  margin: 0 auto;
+  margin-top: 2%;
+  height: 70px; }
+
+#myCarousel {
+  z-index: 1; }
+
+.me {
+  border-radius: 100px; }
 
 ul {
   list-style: inside circle; }
@@ -192,5 +237,5 @@ ol {
 .ng-hide-remove {
   animation: 2s fadeIn ease; }
 
-.header .logos {
+#logos {
   display: none; }
