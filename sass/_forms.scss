@@ -3,6 +3,25 @@
   background: $primary;
 }
 
-.modal-content, .modal-content button {
+.modal-content {
+  background: $primary;
+  border-radius: 3px;
+}
+
+.modal-body, .modal-footer {
   background: $white;
+}
+
+.container .navbar {
+  padding: 0;
+  background: $primary;
+  width: 100%;
+}
+
+.navbar-header button {
+  margin: 0;
+}
+
+#navbar-collapse-1 {
+  padding: 0;
 }

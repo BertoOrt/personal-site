@@ -86,7 +86,17 @@ h4 {
 small, .font_small {
   font-size: 0.8em; }
 
-#logos .logo {
+.tab:hover {
+  cursor: pointer;
+  background: #DCDCDD; }
+
+.tab:hover .piece {
+  color: #019A79; }
+
+.row {
+  width: 100%; }
+
+#logos .logo, #otherLogos .logo {
   font-size: 200%;
   padding-left: 3%; }
 
@@ -107,7 +117,7 @@ small, .font_small {
   text-decoration: none; }
 
 .buttons {
-  width: 600px;
+  width: 60%;
   margin: 0 auto;
   margin-top: 5%; }
 
@@ -148,11 +158,14 @@ header {
   left: 0;
   top: 0;
   height: 70px;
-  box-shadow: 0 2px 2px -2px gray; }
+  box-shadow: 0 2px 2px -2px gray;
+  z-index: 5; }
+
+.container {
+  padding: 0; }
 
 .image {
   width: 100%;
-  height: 500px;
   display: none;
   padding: 2%;
   box-sizing: border-box;
@@ -164,9 +177,13 @@ header {
   border-radius: 3px; }
 
 .item:hover img {
-  opacity: .5; }
+  opacity: .5;
+  -webkit-filter: blur(3px);
+  filter: blur(3px); }
 
 .item img {
+  -webkit-filter: blur(0);
+  filter: blur(0);
   opacity: 1;
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out; }
@@ -184,8 +201,7 @@ header {
   box-sizing: border-box; }
 
 #header .left {
-  float: left;
-  width: 50%; }
+  float: left; }
 
 .left {
   border-radius: 3px; }
@@ -194,14 +210,17 @@ header {
   border-radius: 3px;
   float: right; }
 
-.nav-tab {
+.projects {
   float: right;
-  margin-top: .7%;
-  margin-left: 3%; }
+  margin-top: .7%; }
+
+.about {
+  float: left;
+  margin-top: .7%; }
 
 #image {
   width: 100%;
-  height: 600px;
+  max-height: 600px;
   cursor: pointer;
   border-radius: 3px; }
 
@@ -213,6 +232,7 @@ header #logos, .title {
   display: inline-block; }
 
 .title {
+  margin-bottom: 0;
   margin-right: 3%; }
 
 .spacer {
@@ -220,7 +240,13 @@ header #logos, .title {
   width: 100%; }
 
 #logos {
+  margin-top: 1%;
   width: 30%; }
+
+#otherLogos {
+  margin: 0 auto;
+  margin-top: 1.5%;
+  width: 110px; }
 
 #bottomLogos {
   font-size: 200%;
@@ -234,12 +260,28 @@ header #logos, .title {
   height: 300px;
   border-radius: 150px; }
 
+.meBox {
+  width: 300px;
+  margin: 0 auto; }
+
+.chess span, .name {
+  font-size: 200%;
+  display: block;
+  text-align: center; }
+
+.chess {
+  text-align: center; }
+
 .carousel-caption {
   color: #46494C; }
 
 #about {
   margin: 3%;
   padding: 2%; }
+
+.bar {
+  background: #46494C;
+  height: 2px; }
 
 ul {
   list-style: inside circle; }
@@ -251,14 +293,29 @@ ol {
   color: #f0e6ef;
   background: #019A79; }
 
-.modal-content, .modal-content button {
+.modal-content {
+  background: #019A79;
+  border-radius: 3px; }
+
+.modal-body, .modal-footer {
   background: #f0e6ef; }
+
+.container .navbar {
+  padding: 0;
+  background: #019A79;
+  width: 100%; }
+
+.navbar-header button {
+  margin: 0; }
+
+#navbar-collapse-1 {
+  padding: 0; }
 
 .ng-enter {
   animation: 0.5s fadeIn; }
 
-.ng-hide-add {
-  animation: 1s slideInUp ease; }
+.ng-leave {
+  animation: 0.3s fadeOut; }
 
 .ng-hide-remove {
   animation: 2s fadeIn ease; }

@@ -4,13 +4,13 @@
 // .ng-move{
 //   animation: 0.5s fadeIn;
 // }
-// .ng-leave {
-//   animation: 0.3s fadeOut;
-// }
-//
-.ng-hide-add {
-  animation:1s slideInUp ease;
+.ng-leave {
+  animation: 0.3s fadeOut;
 }
+//
+// .ng-hide-add {
+//   animation:1s fadeOut ease;
+// }
 //
 .ng-hide-remove {
   animation:2s fadeIn ease;

@@ -1,0 +1,12 @@
+.tab:hover {
+  cursor: pointer;
+  background: $fourth;
+}
+
+.tab:hover .piece {
+  color: $primary;
+}
+
+.row {
+  width: 100%;
+}
