@@ -16,7 +16,6 @@ header {
   top: 0;
   height: 70px;
   box-shadow: 0 2px 2px -2px gray;
-
 }
 
 .image {
@@ -25,7 +24,23 @@ header {
   display: none;
   padding: 2%;
   box-sizing: border-box;
+  background-color: $black;
   background-image: url('./../assets/circuit.jpeg');
+}
+
+.item {
+  background: $primary;
+  border-radius: 3px;
+}
+
+.item:hover img {
+  opacity: .5;
+}
+
+.item img {
+  opacity: 1;
+  -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 }
 
 .information {
@@ -45,6 +60,7 @@ header {
   float: left;
   width: 50%;
 }
+
 .left {
   border-radius: 3px;
 }
@@ -97,10 +113,17 @@ header #logos, .title {
   height: 70px;
 }
 
-#myCarousel {
-  z-index: 1;
+.me {
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
 }
 
-.me {
-  border-radius: 100px;
+.carousel-caption {
+  color: $black;
+}
+
+#about {
+  margin: 3%;
+  padding: 2%;
 }

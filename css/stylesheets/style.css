@@ -114,7 +114,7 @@ small, .font_small {
 .button:first-child {
   margin-right: 4%; }
 
-#arrows {
+#myCarousel .arrows {
   background: none; }
 
 a, a:focus, a:active, a:visited, a:link {
@@ -156,7 +156,20 @@ header {
   display: none;
   padding: 2%;
   box-sizing: border-box;
+  background-color: #46494C;
   background-image: url("./../assets/circuit.jpeg"); }
+
+.item {
+  background: #019A79;
+  border-radius: 3px; }
+
+.item:hover img {
+  opacity: .5; }
+
+.item img {
+  opacity: 1;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out; }
 
 .information {
   text-align: center;
@@ -216,17 +229,30 @@ header #logos, .title {
   margin-top: 2%;
   height: 70px; }
 
-#myCarousel {
-  z-index: 1; }
-
 .me {
-  border-radius: 100px; }
+  width: 300px;
+  height: 300px;
+  border-radius: 150px; }
+
+.carousel-caption {
+  color: #46494C; }
+
+#about {
+  margin: 3%;
+  padding: 2%; }
 
 ul {
   list-style: inside circle; }
 
 ol {
   list-style: inside decimal; }
+
+.modal-content .modal-header {
+  color: #f0e6ef;
+  background: #019A79; }
+
+.modal-content, .modal-content button {
+  background: #f0e6ef; }
 
 .ng-enter {
   animation: 0.5s fadeIn; }
