@@ -122,18 +122,21 @@ small, .font_small {
   margin: 1%;
   box-sizing: border-box; }
 
+.row {
+  width: 100%; }
+
 .button:hover {
   background: #019A79;
   color: #f0e6ef;
   text-decoration: none; }
 
 .row-centered {
-  text-align: center; }
+  text-align: center;
+  margin-left: 3px; }
 
 .col-centered {
   display: inline-block;
-  float: none;
-  margin-right: -4px; }
+  float: none; }
 
 #myCarousel .arrows {
   background: none; }
