@@ -16,15 +16,8 @@ $(document).ready(function () {
   });
 
   $('#developer').click(function () {
-    window.location.replace("http://bertoort.com");
+    window.location.replace("http://terminal.bertoort.com");
   })
-  // 
-  // $('.hideMe').click(function () {
-  //   document.querySelector('.navbar-toggle').click()
-  // })
-  // $('.hideMe').click(function () {
-  //   document.querySelector('.navbar-toggle').click()
-  // })
 
   $(function() {
    $('a[href*=#]:not([href=#])').click(function() {
@@ -47,13 +40,3 @@ $(document).ready(function () {
     $('#myInput').focus()
   })
 })
-
-// app.config(function($routeProvider, $locationProvider) {
-//     $routeProvider
-//       // .when('/', {
-//       //   templateUrl: 'partials/home.html',
-//       //   controller: 'cartoons'
-//       // })
-//       .otherwise({redirectTo: '/'});
-//       $locationProvider.html5Mode(true);
-// });
