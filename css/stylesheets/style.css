@@ -310,7 +310,8 @@ header #logos, .title {
   height: 300px; }
 
 .menu {
-  font-size: 200%; }
+  font-size: 200%;
+  color: #46494C; }
 
 .top {
   height: 800px;
@@ -377,6 +378,12 @@ ol {
   width: 60%;
   margin: 0 auto;
   margin-bottom: 100px; }
+
+@media screen and (max-width: 600px) {
+  #myCarousel {
+    width: 95%; }
+  #otherLogos {
+    display: none; } }
 
 .fade-animation.ng-enter {
   animation: 0.5s fadeIn; }
