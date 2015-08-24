@@ -3,7 +3,7 @@ a, a:focus, a:active, a:visited, a:link {
    text-decoration: none;
 }
 
-a:hover,a:focus {
+a:hover {
   color: $black;
 }
 
@@ -12,9 +12,9 @@ a:hover,a:focus {
 }
 
 #bottomLogos a, #bottomLogos a:focus, #bottomLogos a:active, #bottomLogos a:visited, #bottomLogos a:link {
-  color: $black;
+  color: $white;
 }
 
 #bottomLogos a:hover {
-  color: $primary;
+  color: $black;
 }

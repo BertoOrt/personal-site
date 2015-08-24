@@ -7,6 +7,18 @@
   color: $primary;
 }
 
+.tab {
+  margin: 0;
+}
+
 .row {
   width: 100%;
+}
+
+.highlighted {
+  background: $fourth;
+  color: $primary
+}
+.highlight {
+  background: $fourth;
 }

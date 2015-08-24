@@ -18,6 +18,13 @@ $(document).ready(function () {
   $('#developer').click(function () {
     window.location.replace("http://bertoort.com");
   })
+  // 
+  // $('.hideMe').click(function () {
+  //   document.querySelector('.navbar-toggle').click()
+  // })
+  // $('.hideMe').click(function () {
+  //   document.querySelector('.navbar-toggle').click()
+  // })
 
   $(function() {
    $('a[href*=#]:not([href=#])').click(function() {
@@ -27,7 +34,7 @@ $(document).ready(function () {
          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
          if (target.length) {
            $('html,body').animate({
-             scrollTop: target.offset().top
+             scrollTop: target.offset().top - 80
            }, 1000);
            return false;
          }

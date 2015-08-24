@@ -39,17 +39,17 @@
                 <i class="logo fa fa-linkedin"></i>
               </a>
             </div>
-            <div ng-show="regular" class="nav projects">
+            <div ng-show="regular" class="nav projects fade-animation">
               <a href="#projects">
-                <h1>Portfolio</h1>
+                <h1 class='hideMe'>Portfolio</h1>
               </a>
             </div>
-            <div ng-show="regular" class="nav about">
+            <div ng-show="regular" class="nav about fade-animation">
               <a href="#about">
-                <h1>About</h1>
+                <h1 class='hideMe'>About</h1>
               </a>
             </div>
-            <div ng-show="regular" id="otherLogos" class='nav'>
+            <div ng-show="regular" id="otherLogos" class='nav-brand nav fade-animation'>
               <a href="http://github.com/bertoort" target="_blank">
                 <i class="logo fa fa-github-square"></i>
               </a>
@@ -63,7 +63,9 @@
           </div><!-- /.navbar-collapse -->
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
-              &#9776;
+              <div class="menu">
+                &#9776;
+              </div>
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
@@ -79,39 +81,66 @@
     </div>
     <div class="image">
       <div class="information">
-        <h2>Welcome!</h2>
-        Here you will find tons of interesting information about me and what I've done. Click one of the following to continue:
+        <h4>Welcome!</h4>
+        If you're also a devoper hit the Terminal, otherwise press continue and pretend this never happened.
       </div>
-      <div class="buttons" >
-        <input id='everyone' class='button' type="button" ng-click='everyone()'value="Recruiters">
-        <input id='developer'class='button' type="button" value="Developers">
+      <div class="buttons row row-centered" >
+        <input id='everyone' class='button col-xs-6 col-centered' type="button" ng-click='everyone()'value="Continue">
+        <input id='developer'class='button col-xs-6 col-centered' type="button" value="Terminal">
       </div>
     </div>
-    <div ng-show='regular' class="container">
-      <div id="about">
-        <div class="meBox">
-          <img class='me' src="./css/assets/me.jpg" alt="me" />
-          <h1 class="name">Roberto Ortega</h1>
+    <div ng-show='regular' class="top fade-animation">
+      <div class="meBox row">
+        <img class='me' src="./css/assets/me.jpg" alt="me" />
+        <h1 class="name">Roberto Ortega</h1>
+      </div>
+    </div>
+    <div ng-show='regular' class="container fade-animation">
+      <h1 id="about" class='center'>About</h1>
+      <div class="row chess">
+        <div class="col-md-6">
+          <h2 class='tab row' ng-class="{'highlight': d.background}" ng-click='description("background")'> <span ng-class="{'highlighted': d.background}" class="piece">&#9818;</span> Background</h2>
+          <div class="description col-md-12" ng-show='d.background'>
+            <h1>I was born here</h1>
+            <div>
+              blaha
+              asdfasdf
+              asdf
+              asd
+              fadsf
+            </div>
+          </div>
+          <h2 class='tab row' ng-class="{'highlight': d.travels}" ng-click='description("travels")'> <span ng-class="{'highlighted': d.travels}" class="piece">&#9819;</span> Travels</h2>
+          <div class="description col-md-12" ng-show='d.travels'>
+          </div>
+          <h2 class='tab row' ng-class="{'highlight': d.companion}" ng-click='description("companion")'> <span ng-class="{'highlighted': d.companion}" class="piece">&#9822;</span> Companion</h2>
+          <div class="description col-md-12" ng-show='d.companion'>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h2 class='tab row' ng-class="{'highlight': d.badass}" ng-click='description("badass")'> <span ng-class="{'highlighted': d.badass}" class="piece">&#9820;</span> Badass</h2>
+          <div class="description col-md-12" ng-show='d.badass'>
+          </div>
+          <h2 class='tab row' ng-class="{'highlight': d.nerdy}" ng-click='description("nerdy")'> <span ng-class="{'highlighted': d.nerdy}" class="piece">&#9821;</span> Nerdy</h2>
+          <div class="description col-md-12" ng-show='d.nerdy'>
+          </div>
+          <h2 class='tab row' ng-class="{'highlight': d.skills}" ng-click='description("skills")'> <span ng-class="{'highlighted': d.skills}" class="piece">&#9823;</span> Skills</h2>
+          <div class="description col-md-12" ng-show='d.skills'>
+          </div>
         </div>
       </div>
-      <div class="row chess">
-        <h2 class='tab col-md-2'> <span class="piece">&#9818;</span> Background</h2>
-        <h2 class='tab col-md-2'> <span class="piece">&#9819;</span> Travels</h2>
-        <h2 class='tab col-md-2'> <span class="piece">&#9820;</span> Badass</h2>
-        <h2 class='tab col-md-2'> <span class="piece">&#9821;</span> Nerdy</h2>
-        <h2 class='tab col-md-2'> <span class="piece">&#9822;</span> Companion</h2>
-        <h2 class='tab col-md-2'> <span class="piece">&#9823;</span> Skills</h2>
+      <div class="filler row"  ng-show="d === null"></div>
+      <!-- <hr class='bar'> -->
       </div>
-      <hr class='bar'>
+      <div ng-show="regular" class="bottom">
       <div id="projects">
+        <h1 class='center'>Portfolio</h1>
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
-          <!-- Indicators -->
           <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
           </ol>
-
           <div class="carousel-inner" role="listbox">
             <div class="item active" >
               <img data-toggle="modal" data-target="#squirrel" id="image" src="./css/assets/projects/squirrel.png" alt="squirrel">
@@ -253,17 +282,17 @@
           </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
       </div>
-    </div>
-    <div ng-show="regular"id="bottomLogos">
-      <a href="http://github.com/bertoort" target="_blank">
-        <i class="logo fa fa-github-square"></i>
-      </a>
-      <a href="mailto:bertoort@gmail.com">
-        <i class="logo fa fa-envelope"></i>
-      </a>
-      <a href="http://linkedin.com/in/bertoort" target="_blank">
-        <i class="logo fa fa-linkedin"></i>
-      </a>
+      <div id="bottomLogos" class='fade-animation'>
+        <a href="http://github.com/bertoort" target="_blank">
+          <i class="logo fa fa-github-square"></i>
+        </a>
+        <a href="mailto:bertoort@gmail.com">
+          <i class="logo fa fa-envelope"></i>
+        </a>
+        <a href="http://linkedin.com/in/bertoort" target="_blank">
+          <i class="logo fa fa-linkedin"></i>
+        </a>
+      </div>
     </div>
   </main>
   <footer></footer>

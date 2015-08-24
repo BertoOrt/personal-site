@@ -8,11 +8,12 @@
   -webkit-border-radius: 14;
   -moz-border-radius: 14;
   border-radius: 10px;
-  font-family: Arial;
   color: $black;
-  font-size: 49px;
+  font-size: 150%;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
+  margin: 1%;
+  box-sizing: border-box;
 }
 
 .button:hover {
@@ -21,14 +22,13 @@
   text-decoration: none;
 }
 
-.buttons {
-  width: 60%;
-  margin: 0 auto;
-  margin-top: 5%;
+.row-centered {
+    text-align:center;
 }
-
-.button:first-child {
-  margin-right: 4%;
+.col-centered {
+    display:inline-block;
+    float:none;
+    margin-right:-4px;
 }
 
 #myCarousel .arrows {

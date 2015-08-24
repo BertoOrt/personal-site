@@ -1,5 +1,5 @@
 html, body   {
-  background: $white;
+  background: #6D7883;
 }
 
 main {
@@ -35,6 +35,7 @@ header {
 .item {
   background: $primary;
   border-radius: 3px;
+  margin: 0 auto;
 }
 
 .item:hover img {
@@ -57,11 +58,16 @@ header {
   padding: 3%;
   font-size: 200%;
   margin: 0 auto;
+  margin-top: 90px;
   margin-bottom: 2%;
   color: $black;
   background: $white;
   border-radius: 5px;
   box-sizing: border-box;
+}
+
+.information h4 {
+  margin: 0;
 }
 
 #header .left {
@@ -88,8 +94,9 @@ header {
 }
 
 #image {
+  margin: 0 auto;
   width: 100%;
-  max-height: 600px;
+  height: 400px;
   cursor: pointer;
   border-radius: 3px;
 }
@@ -109,7 +116,12 @@ header #logos, .title {
 }
 
 .spacer {
-  height: 70px;
+  height: 15px;
+  width: 100%;
+}
+
+.filler {
+  height: 300px;
   width: 100%;
 }
 
@@ -126,7 +138,7 @@ header #logos, .title {
 
 #bottomLogos {
   font-size: 200%;
-  width: 10%;
+  width: 103px;
   margin: 0 auto;
   margin-top: 2%;
   height: 70px;
@@ -149,7 +161,12 @@ header #logos, .title {
   text-align: center;
 }
 
+.name {
+  text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+
 .chess {
+  margin: 0;
   text-align: center;
 }
 
@@ -157,12 +174,44 @@ header #logos, .title {
   color: $black;
 }
 
-#about {
-  margin: 3%;
-  padding: 2%;
-}
-
 .bar {
   background: $black;
   height: 2px;
+}
+
+.description {
+  background: $fourth;
+  width: 100%;
+  height: 300px;
+}
+
+.menu {
+  font-size: 200%;
+}
+
+.top {
+  height: 800px;
+  padding: 5%;
+  padding-top: 90px;
+  width: 100%;
+  background-size: cover;
+  background-image: url('./../assets/cow.jpg');
+  margin-bottom: 100px;
+}
+
+.center {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 400%;
+  font-family: Source Code Pro;
+}
+
+.bottom {
+  background: -moz-linear-gradient(top, rgba($secondary ,0) 0%, rgba($secondary ,.8) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba($secondary ,0)), color-stop(100%,rgba($secondary ,.8))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba($secondary ,0) 0%,rgba($secondary ,.8) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba($secondary ,0) 0%,rgba($secondary ,.8) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba($secondary ,0) 0%,rgba($secondary ,.8) 100%); /* IE10+ */
+  background: linear-gradient(to bottom, rgba($secondary ,0) 0%,rgba($secondary ,.8) 100%); /* W3C */
 }
