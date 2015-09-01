@@ -1,5 +1,6 @@
 html, body   {
-  background: #6D7883;
+  // background: #6D7883;
+  background: $white;
 }
 
 main {
@@ -34,7 +35,7 @@ header {
 }
 
 .item {
-  background: $primary;
+  background: $fifth;
   border-radius: 3px;
   margin: 0 auto;
 }
@@ -208,17 +209,42 @@ header #logos, .title {
   font-family: Source Code Pro;
 }
 
-.bottom {
-  background: -moz-linear-gradient(top, rgba($secondary ,0) 0%, rgba($secondary ,.8) 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba($secondary ,0)), color-stop(100%,rgba($secondary ,.8))); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, rgba($secondary ,0) 0%,rgba($secondary ,.8) 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, rgba($secondary ,0) 0%,rgba($secondary ,.8) 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, rgba($secondary ,0) 0%,rgba($secondary ,.8) 100%); /* IE10+ */
-  background: linear-gradient(to bottom, rgba($secondary ,0) 0%,rgba($secondary ,.8) 100%); /* W3C */
+.center-2 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 250%;
+  font-family: Source Code Pro;
 }
 
+.bottom {
+  // background: -moz-linear-gradient(top, rgba($secondary ,0) 0%, rgba($secondary ,.8) 100%); /* FF3.6+ */
+  // background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba($secondary ,0)), color-stop(100%,rgba($secondary ,.8))); /* Chrome,Safari4+ */
+  // background: -webkit-linear-gradient(top, rgba($secondary ,0) 0%,rgba($secondary ,.8) 100%); /* Chrome10+,Safari5.1+ */
+  // background: -o-linear-gradient(top, rgba($secondary ,0) 0%,rgba($secondary ,.8) 100%); /* Opera 11.10+ */
+  // background: -ms-linear-gradient(top, rgba($secondary ,0) 0%,rgba($secondary ,.8) 100%); /* IE10+ */
+  // background: linear-gradient(to bottom, rgba($secondary ,0) 0%,rgba($secondary ,.8) 100%); /* W3C */
+  background: $sixth;
+  color: $white;
+  padding-top: 2%;
+  margin-top: 2%;
+}
 
 .col-md-6 .skills {
   text-align: left;
   padding-top: 5%;
+}
+
+.large {
+  width: 100%;
+  height: 100vh;
+  background: $sixth;
+}
+
+.projectImage {
+  background-image: url('./../assets/projects/war.png');
+  background-size: cover;
+  width: 70%;
+  margin: 0 auto;
+  height: 500px;
 }

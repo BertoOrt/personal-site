@@ -199,30 +199,35 @@
           <h2 class='tab row' ng-class="{'highlight': d.skills}" ng-click='description("skills")'> <span ng-class="{'highlighted': d.skills}" class="piece">&#9823;</span> Skills</h2>
           <div class="description skills col-md-12" ng-show='d.skills'>
             <p>
-              &#9823; Languages: JavaScript, Rails, HTML5/CSS3, Go
+              &#9823; <strong> Languages: </strong> JavaScript, Rails, HTML5/CSS3, Go
             </p>
             <p>
-              &#9823; Frameworks: Nodejs, Express, Angular JS
+              &#9823; <strong>Frameworks:</strong> Nodejs, Express, Angularjs
             </p>
             <p>
-              &#9823; Libraries: jQuery, Bootstrap, D3
+              &#9823; <strong>Libraries:</strong> jQuery, Bootstrap, Reactjs, D3js
             </p>
             <p>
-              &#9823; Tools: MongoDB, SQL, Sass, Jasmine, Gulp
+              &#9823; <strong>Tools:</strong> MongoDB, SQL, Sass, Jasmine, Gulp
             </p>
             <p>
-              &#9823; Techniques: Test-Driven Development, Pair-Programming, User Experience Design
+              &#9823; <strong>Techniques:</strong> Test-Driven Development, Pair-Programming, User Experience Design
             </p>
-
           </div>
         </div>
       </div>
       <div class="filler row"  ng-show="d === null"></div>
-      <!-- <hr class='bar'> -->
     </div>
     <div ng-show="regular" class="bottom">
       <div id="projects">
         <h1 class='center'>Portfolio</h1>
+        <div class="large">
+          <div class="projectImage">
+          <h2 class='center-2'>War</h2>
+
+          </div>
+        </div>
+        <h2 class='center-2'>Others</h2>
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -236,12 +241,12 @@
               </div>
             </div>
             <div class="item">
-              <img data-toggle="modal" data-target="#war"  id="image" src="./assets/projects/war.png" alt="war">
+              <img data-toggle="modal" data-target="#war"  id="image" src="./assets/projects/bookmarks.png" alt="war">
               <div class="carousel-caption">
               </div>
             </div>
             <div class="item">
-              <img  data-toggle="modal" data-target="#terminal" id="image" src="./assets/projects/terminal.png" alt="terminal">
+              <img  data-toggle="modal" data-target="#terminal" id="image" src="./assets/projects/kwlh.png" alt="terminal">
               <div class="carousel-caption">
               </div>
             </div>

@@ -1,5 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Poppins:400,600);
-@import url(https://fonts.googleapis.com/css?family=Chivo);
+@import url(http://fonts.googleapis.com/css?family=Poppins:400,700);
+@import url(https://fonts.googleapis.com/css?family=Chivo:400,900);
 @import url(http://fonts.googleapis.com/css?family=Yantramanav);
 
 html {font-size: 1em;}
@@ -37,3 +37,7 @@ h3 {font-size: 1.563em;}
 h4 {font-size: 1.25em;}
 
 small, .font_small {font-size: 0.8em;}
+
+strong {
+  font-weight: 900;
+}
