@@ -49,7 +49,7 @@ gulp.task('sass', function () {
 gulp.task('watchout', function () {
   gulp.watch('sass/*.scss', ['sass'])
   gulp.watch('css/assets/*', ['assets'])
-  gulp.watch('js/*js', ['fingerprint'])
+  gulp.watch(['js/*js', 'index.html'], ['fingerprint'])
   gulp.watch('css/assets/projects', ['projects']);
 })
 
