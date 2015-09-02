@@ -18,3 +18,17 @@ a:hover {
 #bottomLogos a:hover {
   color: $black;
 }
+
+.miniLogos {
+  font-size: 150%;
+  text-align: right;
+}
+
+.miniLogos {
+  a:link, a:visited, a:active{
+    color: $black;
+  }
+  a:hover, a:focus {
+    color: $primary;
+  }
+}

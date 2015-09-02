@@ -222,9 +222,27 @@
       <div id="projects">
         <h1 class='center'>Portfolio</h1>
         <div class="large">
-          <div class="projectImage">
-          <h2 class='center-2'>War</h2>
-
+          <div class="projectTitle">
+            <h2 >War</h2>
+          </div>
+          <div class="projectImageContainer-2">
+            <img  data-toggle="modal" data-target="#war" class="projectImage" src="./../assets/projects/war.png" alt="war" />
+          </div>
+        </div>
+        <div class="large">
+          <div class="projectTitle">
+            <h2 >Beats N Eats</h2>
+          </div>
+          <div class="projectImageContainer-1">
+            <img  data-toggle="modal" data-target="#beatsneats" class="projectImage" src="./../assets/projects/beatsneats.png" alt="beatsneats" />
+          </div>
+        </div>
+        <div class="large">
+          <div class="projectTitle">
+            <h2 >geopardy</h2>
+          </div>
+          <div class="projectImageContainer-2">
+            <img  data-toggle="modal" data-target="#geopardy" class="projectImage" src="./../assets/projects/geopardy.png" alt="geopardy" />
           </div>
         </div>
         <h2 class='center-2'>Others</h2>
@@ -241,12 +259,12 @@
               </div>
             </div>
             <div class="item">
-              <img data-toggle="modal" data-target="#war"  id="image" src="./assets/projects/bookmarks.png" alt="war">
+              <img data-toggle="modal" data-target="#bookmarks"  id="image" src="./assets/projects/bookmarks.png" alt="bookmarks">
               <div class="carousel-caption">
               </div>
             </div>
             <div class="item">
-              <img  data-toggle="modal" data-target="#terminal" id="image" src="./assets/projects/kwlh.png" alt="terminal">
+              <img  data-toggle="modal" data-target="#kwlh" id="image" src="./assets/projects/kwlh.png" alt="kwlh">
               <div class="carousel-caption">
               </div>
             </div>
@@ -270,27 +288,21 @@
               <div class="modal-body">
                 <div class="container-fluid">
                   <div class="row">
-                    <div class="col-md-4">.col-md-4</div>
-                    <div class="col-md-4 col-md-offset-4">.col-md-4 .col-md-offset-4</div>
+                    <p>A 2D javascript arcade game! Try to collect as many acorns as you can while making your way to the top of the tree, but don't get hit by any birds or apples.</p>
                   </div>
                   <div class="row">
-                    <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
-                    <div class="col-md-2 col-md-offset-4">.col-md-2 .col-md-offset-4</div>
+                    <p>
+                      <strong>Technologies:</strong> Phaser library and Express.
+                    </p>
                   </div>
                   <div class="row">
-                    <div class="col-md-6 col-md-offset-3">.col-md-6 .col-md-offset-3</div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-9">
-                      Level 1: .col-sm-9
-                      <div class="row">
-                        <div class="col-xs-8 col-sm-6">
-                          Level 2: .col-xs-8 .col-sm-6
-                        </div>
-                        <div class="col-xs-4 col-sm-6">
-                          Level 2: .col-xs-4 .col-sm-6
-                        </div>
-                      </div>
+                    <div class="miniLogos">
+                      <a href="#" target='blank'>
+                       <i class="logo fa fa-github"></i>
+                      </a>
+                      <a href="https://pure-fjord-4882.herokuapp.com/" target='blank'>
+                       <i class="logo fa fa-globe"></i>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -308,27 +320,21 @@
               <div class="modal-body">
                 <div class="container-fluid">
                   <div class="row">
-                    <div class="col-md-4">.col-md-4</div>
-                    <div class="col-md-4 col-md-offset-4">.col-md-4 .col-md-offset-4</div>
+                    <p>Simulation and analysis of one of the most popular childhood games. Excellent practice of algorithms and logic. It is build with javascript classes and recursion.</p>
                   </div>
                   <div class="row">
-                    <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
-                    <div class="col-md-2 col-md-offset-4">.col-md-2 .col-md-offset-4</div>
+                    <p>
+                      <strong>Technologies:</strong> D3js, jQuery, and Express.
+                    </p>
                   </div>
                   <div class="row">
-                    <div class="col-md-6 col-md-offset-3">.col-md-6 .col-md-offset-3</div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-9">
-                      Level 1: .col-sm-9
-                      <div class="row">
-                        <div class="col-xs-8 col-sm-6">
-                          Level 2: .col-xs-8 .col-sm-6
-                        </div>
-                        <div class="col-xs-4 col-sm-6">
-                          Level 2: .col-xs-4 .col-sm-6
-                        </div>
-                      </div>
+                    <div class="miniLogos">
+                      <a href="#" target='blank'>
+                       <i class="logo fa fa-github"></i>
+                      </a>
+                      <a href="http://war.bertoort.com/" target='blank'>
+                       <i class="logo fa fa-globe"></i>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -336,37 +342,159 @@
             </div><!-- /.modal-content -->
           </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
-        <div id="terminal" class="modal fade" role="dialog" aria-labelledby="gridSystemModalLabel">
+        <div id="beatsneats" class="modal fade" role="dialog" aria-labelledby="gridSystemModalLabel">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="gridSystemModalLabel">Terminal</h4>
+                <h4 class="modal-title" id="gridSystemModalLabel">Beats N Eats</h4>
               </div>
               <div class="modal-body">
                 <div class="container-fluid">
                   <div class="row">
-                    <div class="col-md-4">.col-md-4</div>
-                    <div class="col-md-4 col-md-offset-4">.col-md-4 .col-md-offset-4</div>
+                    <p>New to town? find out what to do with this site. Build with Nodejs, it utilizes different API's to gather the top Yelp restaurants around, local weather, and concert shows.</p>
                   </div>
                   <div class="row">
-                    <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
-                    <div class="col-md-2 col-md-offset-4">.col-md-2 .col-md-offset-4</div>
+                    <p>
+                      <strong>Technologies:</strong> MongoDb, Sass, Nodejs and Express.
+                    </p>
                   </div>
                   <div class="row">
-                    <div class="col-md-6 col-md-offset-3">.col-md-6 .col-md-offset-3</div>
+                    <div class="miniLogos">
+                      <a href="#" target='blank'>
+                       <i class="logo fa fa-github"></i>
+                      </a>
+                      <a href="http://glacial-shelf-9429.herokuapp.com/" target='blank'>
+                       <i class="logo fa fa-globe"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <div id="geopardy" class="modal fade" role="dialog" aria-labelledby="gridSystemModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="gridSystemModalLabel">geopardy</h4>
+              </div>
+              <div class="modal-body">
+                <div class="container-fluid">
+                  <div class="row">
+                    <p>Trivia time! This app allows you to track real-time answers and scores across multiple teams. Timer included.</p>
                   </div>
                   <div class="row">
-                    <div class="col-sm-9">
-                      Level 1: .col-sm-9
-                      <div class="row">
-                        <div class="col-xs-8 col-sm-6">
-                          Level 2: .col-xs-8 .col-sm-6
-                        </div>
-                        <div class="col-xs-4 col-sm-6">
-                          Level 2: .col-xs-4 .col-sm-6
-                        </div>
-                      </div>
+                    <p>
+                      <strong>Technologies:</strong> Angularjs, Firebase, and Foundation-apps.
+                    </p>
+                  </div>
+                  <div class="row">
+                    <div class="miniLogos">
+                      <a href="#" target='blank'>
+                       <i class="logo fa fa-github"></i>
+                      </a>
+                      <a href="http://development.geopardy.divshot.io/#/" target='blank'>
+                       <i class="logo fa fa-globe"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <div id="kwlh" class="modal fade" role="dialog" aria-labelledby="gridSystemModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="gridSystemModalLabel">KWL(H)</h4>
+              </div>
+              <div class="modal-body">
+                <div class="container-fluid">
+                  <div class="row">
+                    <p>CRUD all day. This is an app for creating and managing your own KWLH charts</p>
+                  </div>
+                  <div class="row">
+                    <p>
+                      <strong>Technologies:</strong> MongoDb, Nodejs, Sass, and Express.
+                    </p>
+                  </div>
+                  <div class="row">
+                    <div class="miniLogos">
+                      <a href="#" target='blank'>
+                       <i class="logo fa fa-github"></i>
+                      </a>
+                      <a href="https://agile-anchorage-3739.herokuapp.com/" target='blank'>
+                       <i class="logo fa fa-globe"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <div id="bookmarks" class="modal fade" role="dialog" aria-labelledby="gridSystemModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="gridSystemModalLabel">Bookmarks</h4>
+              </div>
+              <div class="modal-body">
+                <div class="container-fluid">
+                  <div class="row">
+                    <p>Keep track of your favorite sites. This app is a great example of database associations, ajax calls, and promises.</p>
+                  </div>
+                  <div class="row">
+                    <p>
+                      <strong>Technologies:</strong> MongoDb, Nodejs, Sass, and Express.
+                    </p>
+                  </div>
+                  <div class="row">
+                    <div class="miniLogos">
+                      <a href="#" target='blank'>
+                       <i class="logo fa fa-github"></i>
+                      </a>
+                      <a href="https://pure-badlands-3828.herokuapp.com/" target='blank'>
+                       <i class="logo fa fa-globe"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <div id="sendgrid" class="modal fade" role="dialog" aria-labelledby="gridSystemModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="gridSystemModalLabel">Email</h4>
+              </div>
+              <div class="modal-body">
+                <div class="container-fluid">
+                  <div class="row">
+                    <p>A 2D javascript arcade game! Try to collect as many acorns as you can while making your way to the top of the tree, but don't get hit by any birds or apples.</p>
+                  </div>
+                  <div class="row">
+                    <p>
+                      <strong>Technologies:</strong> Phaser library and Express.
+                    </p>
+                  </div>
+                  <div class="row">
+                    <div class="miniLogos">
+                      <a href="#">
+                       <i class="logo fa fa-github"></i>
+                      </a>
+                      <a href="#">
+                       <i class="logo fa fa-globe"></i>
+                      </a>
                     </div>
                   </div>
                 </div>

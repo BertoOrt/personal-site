@@ -98,7 +98,7 @@ header {
 #image {
   margin: 0 auto;
   width: 100%;
-  height: 400px;
+  height: 500px;
   cursor: pointer;
   border-radius: 3px;
 }
@@ -164,7 +164,8 @@ header #logos, .title {
 }
 
 .name {
-  text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+  text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff,
+  1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
 }
 
 .chess {
@@ -209,8 +210,8 @@ header #logos, .title {
   font-family: Source Code Pro;
 }
 
-.center-2 {
-  margin-top: 50px;
+#projects .center-2 {
+  margin-top: 0;
   margin-bottom: 50px;
   text-align: center;
   font-size: 250%;
@@ -218,12 +219,6 @@ header #logos, .title {
 }
 
 .bottom {
-  // background: -moz-linear-gradient(top, rgba($secondary ,0) 0%, rgba($secondary ,.8) 100%); /* FF3.6+ */
-  // background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba($secondary ,0)), color-stop(100%,rgba($secondary ,.8))); /* Chrome,Safari4+ */
-  // background: -webkit-linear-gradient(top, rgba($secondary ,0) 0%,rgba($secondary ,.8) 100%); /* Chrome10+,Safari5.1+ */
-  // background: -o-linear-gradient(top, rgba($secondary ,0) 0%,rgba($secondary ,.8) 100%); /* Opera 11.10+ */
-  // background: -ms-linear-gradient(top, rgba($secondary ,0) 0%,rgba($secondary ,.8) 100%); /* IE10+ */
-  // background: linear-gradient(to bottom, rgba($secondary ,0) 0%,rgba($secondary ,.8) 100%); /* W3C */
   background: $sixth;
   color: $white;
   padding-top: 2%;
@@ -235,16 +230,44 @@ header #logos, .title {
   padding-top: 5%;
 }
 
-.large {
+#projects .large {
   width: 100%;
-  height: 100vh;
+  height: 650px;
   background: $sixth;
 }
 
-.projectImage {
-  background-image: url('./../assets/projects/war.png');
-  background-size: cover;
-  width: 70%;
+.projectImageContainer-1, .projectImageContainer-2 {
+  width: 60%;
   margin: 0 auto;
   height: 500px;
+  background: $fifth;
+}
+
+.projectImageContainer-2 {
+  background: $secondary;
+}
+
+.projectImage {
+  width: 100%;
+  height: 100%;
+}
+
+.projectImage:hover {
+  opacity: .5;
+  -webkit-filter: blur(3px);
+	filter: blur(3px);
+}
+
+.projectImageContainer-1:hover, .projectImageContainer-2:hover {
+  cursor: pointer;
+}
+
+.projectTitle {
+  width: 60%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#projects .modal-dialog {
+  color: $black;
 }
