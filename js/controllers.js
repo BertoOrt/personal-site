@@ -1,5 +1,5 @@
 app.controller('index', [ '$scope', function ($scope) {
-  $scope.regular = true;
+  $scope.regular = false;
   $scope.d = null;
   $scope.everyone = function () {
     $scope.regular = true;
