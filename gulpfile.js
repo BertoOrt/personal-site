@@ -38,6 +38,11 @@ gulp.task('projects', function () {
     .pipe(gulp.dest('dist/assets/projects'))
 })
 
+gulp.task('techs', function () {
+  return gulp.src('css/assets/techs/*')
+    .pipe(gulp.dest('dist/assets/techs'))
+})
+
 gulp.task('sass', function () {
   gulp.src('./sass/*.scss')
     .pipe(sass().on('error', sass.logError))
@@ -53,4 +58,4 @@ gulp.task('watchout', function () {
   gulp.watch('css/assets/projects', ['projects']);
 })
 
-gulp.task('default', ['fingerprint','assets', 'sass', 'projects', 'watchout'])
+gulp.task('default', ['fingerprint','assets', 'sass', 'projects', 'techs', 'watchout'])

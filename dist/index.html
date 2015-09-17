@@ -32,7 +32,7 @@
               <a href="http://github.com/bertoort" target="_blank">
                 <i class="logo fa fa-github-square"></i>
               </a>
-              <a href="mailto:bertoort@gmail.com">
+              <a href="mailto:berto.ort@gmail.com">
                 <i class="logo fa fa-envelope"></i>
               </a>
               <a href="http://linkedin.com/in/bertoort" target="_blank">
@@ -169,7 +169,7 @@
               <i class="fa fa-music"></i> Making music
             </p>
             <p>
-              <i class="fa fa-futbol-o"></i> Sports. All of them
+              <i class="fa fa-futbol-o"></i> Soccer, tennis, and Swimming
             </p>
             <p>
               ---
@@ -198,21 +198,120 @@
           </div>
           <h2 class='tab row' ng-class="{'highlight': d.skills}" ng-click='description("skills")'> <span ng-class="{'highlighted': d.skills}" class="piece">&#9823;</span> Skills</h2>
           <div class="description skills col-md-12" ng-show='d.skills'>
-            <p>
-              &#9823; <strong> Languages: </strong> JavaScript, Rails, HTML5/CSS3, Go
-            </p>
-            <p>
-              &#9823; <strong>Frameworks:</strong> Nodejs, Express, Angularjs
-            </p>
-            <p>
-              &#9823; <strong>Libraries:</strong> jQuery, Bootstrap, Reactjs, D3js
-            </p>
-            <p>
-              &#9823; <strong>Tools:</strong> MongoDB, SQL, Sass, Jasmine, Gulp
-            </p>
-            <p>
-              &#9823; <strong>Techniques:</strong> Test-Driven Development, Pair-Programming, User Experience Design
-            </p>
+            <table>
+              <tr>
+                <td class='logoTd'>
+                  <img src="./../assets/techs/node.png" alt="node" title="node" class="techLogo"/>
+                </td>
+                <td class='desc'>
+                  JavaScript: Node & Express
+                </td>
+                <td class='logoTd'>
+                  <img src="./../assets/techs/gopher.png" alt="gopher" title="gopher" class="techLogo"/>
+                </td>
+                <td class='desc'>
+                  GoLang & gin
+                </td>
+              </tr>
+              <tr>
+                <td class='logoTd'>
+                  <img src="./../assets/techs/ruby.png" alt="ruby" title="ruby" class="techLogo"/>
+                </td>
+                <td class='desc'>
+                  Ruby on Rails
+                </td>
+                <td class='logoTd'>
+                  <img src="./../assets/techs/html.ico" alt="html" title="html" class="techLogo"/>
+                </td>
+                <td class='desc'>
+                  HTML, Jade, Slim, etc
+                </td>
+              </tr>
+              <tr>
+                <td class='logoTd'>
+                  <img src="./../assets/techs/css.png" alt="css" title="css" class="techLogo"/>
+                </td>
+                <td class='desc'>
+                  Oh, css
+                </td>
+                <td class='logoTd'>
+                  <img src="./../assets/techs/react.png" alt="react" title="react" class="techLogo"/>
+                </td>
+                <td class='desc'>
+                  Reactjs
+                </td>
+              </tr>
+              <tr>
+                <td class='logoTd'>
+                  <img src="./../assets/techs/angular.png" alt="angular" title="angular" class="techLogo"/>
+                </td>
+                <td class='desc'>
+                  Angularjs
+                </td>
+                <td class='logoTd'>
+                  <img src="./../assets/techs/jasmine.png" alt="jasmine" title="jasmine" class="techLogo"/>
+                </td>
+                <td class='desc'>
+                  Jasmine and TDD
+                </td>
+              </tr>
+              <tr>
+                <td class='logoTd'>
+                  <img src="./../assets/techs/mongo.png" alt="mongo" title="mongo" class="techLogo"/>
+                </td>
+                <td class='desc'>
+                  Mongo!
+                </td>
+                <td class='logoTd'>
+                  <img src="./../assets/techs/postgresql.png" alt="postgresql" title="postgresql" class="techLogo"/>
+                </td>
+                <td class='desc'>
+                  SQL
+                </td>
+              </tr>
+              <tr>
+                <td class='logoTd'>
+                  <img src="./../assets/techs/gulp.png" alt="gulp" title="gulp" class="techLogo"/>
+                </td>
+                <td class='desc'>
+                  Gulp & Asset Management
+                </td>
+                <td class='logoTd'>
+                  <img src="./../assets/techs/sass.png" alt="sass" title="sass" class="techLogo"/>
+                </td>
+                <td class='desc'>
+                  Sass
+                </td>
+              </tr>
+              <tr>
+                <td class='logoTd'>
+                  <img src="./../assets/techs/bluemix.png" alt="bluemix" title="bluemix" class="techLogo"/>
+                </td>
+                <td class='desc'>
+                  Bluemix, Divshot
+                </td>
+                <td class='logoTd'>
+                  <img src="./../assets/techs/heroku.png" alt="heroku" title="heroku" class="techLogo"/>
+                </td>
+                <td class='desc'>
+                  Heroku, AWS
+                </td>
+              </tr>
+              <tr>
+                <td class='logoTd'>
+                  <img src="./../assets/techs/foundation.png" alt="foundation" title="foundation" class="techLogo"/>
+                </td>
+                <td class='desc'>
+                  Foundation
+                </td>
+                <td class='logoTd'>
+                  <img src="./../assets/techs/bootstrap.png" alt="bootstrap" title="bootstrap" class="techLogo"/>
+                </td>
+                <td class='desc'>
+                  Bootstrap
+                </td>
+              </tr>
+            </table>
           </div>
         </div>
       </div>
@@ -221,6 +320,14 @@
     <div ng-show="regular" class="bottom">
       <div id="projects">
         <h1 class='center'>Portfolio</h1>
+        <div class="large">
+          <div class="projectTitle">
+            <h2 >Twitch Streams</h2>
+          </div>
+          <div class="projectImageContainer-1">
+            <img  data-toggle="modal" data-target="#twitch" class="projectImage" src="./../assets/projects/twitchStreams.png" alt="twitch streams" />
+          </div>
+        </div>
         <div class="large">
           <div class="projectTitle">
             <h2 >War</h2>
@@ -461,6 +568,38 @@
                        <i class="logo fa fa-github"></i>
                       </a>
                       <a href="https://pure-badlands-3828.herokuapp.com/" target='_blank'>
+                       <i class="logo fa fa-globe"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <div id="twitch" class="modal fade" role="dialog" aria-labelledby="gridSystemModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="gridSystemModalLabel">Twitch Streams</h4>
+              </div>
+              <div class="modal-body">
+                <div class="container-fluid">
+                  <div class="row">
+                    <p>Follow streams on Twitch? This app allows you to search and browse through your favorite channels and add them to a list. Check to see who is streaming right now. Once you have a list, you can share them with your friends!</p>
+                  </div>
+                  <div class="row">
+                    <p>
+                      <strong>Technologies:</strong> GoLang, Gin, and MongoDb.
+                    </p>
+                  </div>
+                  <div class="row">
+                    <div class="miniLogos">
+                      <a href="https://github.com/BertoOrt/twitch-streams/" target='_blank'>
+                       <i class="logo fa fa-github"></i>
+                      </a>
+                      <a href="https://infinite-woodland-7702.herokuapp.com/" target='_blank'>
                        <i class="logo fa fa-globe"></i>
                       </a>
                     </div>
