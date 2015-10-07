@@ -322,14 +322,6 @@
         <h1 class='center'>Portfolio</h1>
         <div class="large">
           <div class="projectTitle">
-            <h2 >Twitch Streams</h2>
-          </div>
-          <div class="projectImageContainer-1">
-            <img  data-toggle="modal" data-target="#twitch" class="projectImage" src="./../assets/projects/twitchStreams.png" alt="twitch streams" />
-          </div>
-        </div>
-        <div class="large">
-          <div class="projectTitle">
             <h2 >War</h2>
           </div>
           <div class="projectImageContainer-2">
@@ -338,10 +330,18 @@
         </div>
         <div class="large">
           <div class="projectTitle">
-            <h2 >Beats N Eats</h2>
+            <h2 >Twitch Streams</h2>
           </div>
           <div class="projectImageContainer-1">
-            <img  data-toggle="modal" data-target="#beatsneats" class="projectImage" src="./../assets/projects/beatsneats.png" alt="beatsneats" />
+            <img  data-toggle="modal" data-target="#twitch" class="projectImage" src="./../assets/projects/twitchStreams.png" alt="twitch streams" />
+          </div>
+        </div>
+        <div class="large">
+          <div class="projectTitle">
+            <h2 >Squirrel</h2>
+          </div>
+          <div class="projectImageContainer-1">
+            <img  data-toggle="modal" data-target="#squirrel" class="projectImage" src="./assets/projects/squirrel.png" alt="squirrel" />
           </div>
         </div>
         <div class="large">
@@ -357,21 +357,15 @@
           <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-          </ol>
+            </ol>
           <div class="carousel-inner" role="listbox">
             <div class="item active" >
-              <img data-toggle="modal" data-target="#squirrel" id="image" src="./assets/projects/squirrel.png" alt="squirrel">
+              <img data-toggle="modal" data-target="#beatsneats" data-target="#squirrel" id="image" src="./../assets/projects/beatsneats.png" alt="beatsneats" >
               <div class="carousel-caption">
               </div>
             </div>
             <div class="item">
               <img data-toggle="modal" data-target="#bookmarks"  id="image" src="./assets/projects/bookmarks.png" alt="bookmarks">
-              <div class="carousel-caption">
-              </div>
-            </div>
-            <div class="item">
-              <img  data-toggle="modal" data-target="#kwlh" id="image" src="./assets/projects/kwlh.png" alt="kwlh">
               <div class="carousel-caption">
               </div>
             </div>
@@ -402,15 +396,15 @@
                       <strong>Technologies:</strong> Phaser library and Express.
                     </p>
                   </div>
-                  <div class="row">
-                    <div class="miniLogos">
-                      <a href="https://github.com/sabrams86/squirrel/" target='_blank'>
-                       <i class="logo fa fa-github"></i>
-                      </a>
-                      <a href="https://pure-fjord-4882.herokuapp.com/" target='_blank'>
-                       <i class="logo fa fa-globe"></i>
-                      </a>
-                    </div>
+                  <button type="button" ng-click="togglePreviews()" class="button preview"> {{previewButtonText}} </button>
+                  <iframe width="540" ng-show="previews" height="315" src="https://www.youtube.com/embed/JdCLiCRBoAs" frameborder="0" allowfullscreen></iframe>
+                  <div class="miniLogos">
+                    <a href="https://github.com/sabrams86/squirrel/" target='_blank'>
+                     <i class="logo fa fa-github"></i>
+                    </a>
+                    <a href="https://pure-fjord-4882.herokuapp.com/" target='_blank'>
+                     <i class="logo fa fa-globe"></i>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -434,15 +428,15 @@
                       <strong>Technologies:</strong> D3js, jQuery, and Express.
                     </p>
                   </div>
-                  <div class="row">
-                    <div class="miniLogos">
-                      <a href="https://github.com/BertoOrt/war" target='_blank'>
-                       <i class="logo fa fa-github"></i>
-                      </a>
-                      <a href="http://war.bertoort.com/" target='_blank'>
-                       <i class="logo fa fa-globe"></i>
-                      </a>
-                    </div>
+                  <button type="button" ng-click="togglePreviews()" class="button preview"> {{previewButtonText}} </button>
+                  <iframe width="540" ng-show="previews" height="315" src="https://www.youtube.com/embed/gkG-IZsQX_g" frameborder="0" allowfullscreen></iframe>
+                  <div class="miniLogos">
+                    <a href="https://github.com/BertoOrt/war" target='_blank'>
+                     <i class="logo fa fa-github"></i>
+                    </a>
+                    <a href="http://war.bertoort.com/" target='_blank'>
+                     <i class="logo fa fa-globe"></i>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -466,15 +460,15 @@
                       <strong>Technologies:</strong> MongoDb, Sass, Nodejs and Express.
                     </p>
                   </div>
-                  <div class="row">
-                    <div class="miniLogos">
-                      <a href="https://github.com/a25patel/GroupProject/" target='_blank'>
-                       <i class="logo fa fa-github"></i>
-                      </a>
-                      <a href="http://glacial-shelf-9429.herokuapp.com/" target='_blank'>
-                       <i class="logo fa fa-globe"></i>
-                      </a>
-                    </div>
+                  <button type="button" ng-click="togglePreviews()" class="button preview"> {{previewButtonText}} </button>
+                  <iframe width="540" ng-show="previews" height="315" src="https://www.youtube.com/embed/AArqkJAxSo8" frameborder="0" allowfullscreen></iframe>
+                  <div class="miniLogos">
+                    <a href="https://github.com/a25patel/GroupProject/" target='_blank'>
+                     <i class="logo fa fa-github"></i>
+                    </a>
+                    <a href="http://glacial-shelf-9429.herokuapp.com/" target='_blank'>
+                     <i class="logo fa fa-globe"></i>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -498,47 +492,15 @@
                       <strong>Technologies:</strong> Angularjs, Firebase, and Foundation-apps.
                     </p>
                   </div>
-                  <div class="row">
-                    <div class="miniLogos">
-                      <a href="https://github.com/BertoOrt/geopardy" target='_blank'>
-                       <i class="logo fa fa-github"></i>
-                      </a>
-                      <a href="http://development.geopardy.divshot.io/#/" target='_blank'>
-                       <i class="logo fa fa-globe"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div><!-- /.modal-content -->
-          </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->
-        <div id="kwlh" class="modal fade" role="dialog" aria-labelledby="gridSystemModalLabel">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="gridSystemModalLabel">KWL(H)</h4>
-              </div>
-              <div class="modal-body">
-                <div class="container-fluid">
-                  <div class="row">
-                    <p>CRUD all day. This is an app for creating and managing your own KWLH charts</p>
-                  </div>
-                  <div class="row">
-                    <p>
-                      <strong>Technologies:</strong> MongoDb, Nodejs, Sass, and Express.
-                    </p>
-                  </div>
-                  <div class="row">
-                    <div class="miniLogos">
-                      <a href="https://github.com/BertoOrt/kwlh/" target='_blank'>
-                       <i class="logo fa fa-github"></i>
-                      </a>
-                      <a href="https://agile-anchorage-3739.herokuapp.com/" target='_blank'>
-                       <i class="logo fa fa-globe"></i>
-                      </a>
-                    </div>
+                  <button type="button" ng-click="togglePreviews()" class="button preview"> {{previewButtonText}} </button>
+                  <iframe width="540" ng-show="previews" height="315" src="https://www.youtube.com/embed/Sdd5vo8x59k" frameborder="0" allowfullscreen></iframe>
+                  <div class="miniLogos">
+                    <a href="https://github.com/BertoOrt/geopardy" target='_blank'>
+                     <i class="logo fa fa-github"></i>
+                    </a>
+                    <a href="http://development.geopardy.divshot.io/#/" target='_blank'>
+                     <i class="logo fa fa-globe"></i>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -562,15 +524,15 @@
                       <strong>Technologies:</strong> MongoDb, Nodejs, Sass, and Express.
                     </p>
                   </div>
-                  <div class="row">
-                    <div class="miniLogos">
-                      <a href="https://github.com/BertoOrt/bookmarks/" target='_blank'>
-                       <i class="logo fa fa-github"></i>
-                      </a>
-                      <a href="https://pure-badlands-3828.herokuapp.com/" target='_blank'>
-                       <i class="logo fa fa-globe"></i>
-                      </a>
-                    </div>
+                  <button type="button" ng-click="togglePreviews()" class="button preview"> {{previewButtonText}} </button>
+                  <iframe width="540" ng-show="previews" height="315" src="https://www.youtube.com/embed/h4wdthnEEPA" frameborder="0" allowfullscreen></iframe>
+                  <div class="miniLogos">
+                    <a href="https://github.com/BertoOrt/bookmarks/" target='_blank'>
+                     <i class="logo fa fa-github"></i>
+                    </a>
+                    <a href="https://pure-badlands-3828.herokuapp.com/" target='_blank'>
+                     <i class="logo fa fa-globe"></i>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -594,47 +556,15 @@
                       <strong>Technologies:</strong> GoLang, Gin, and MongoDb.
                     </p>
                   </div>
-                  <div class="row">
-                    <div class="miniLogos">
-                      <a href="https://github.com/BertoOrt/twitch-streams/" target='_blank'>
-                       <i class="logo fa fa-github"></i>
-                      </a>
-                      <a href="https://infinite-woodland-7702.herokuapp.com/" target='_blank'>
-                       <i class="logo fa fa-globe"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div><!-- /.modal-content -->
-          </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->
-        <div id="sendgrid" class="modal fade" role="dialog" aria-labelledby="gridSystemModalLabel">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="gridSystemModalLabel">Email</h4>
-              </div>
-              <div class="modal-body">
-                <div class="container-fluid">
-                  <div class="row">
-                    <p>A 2D javascript arcade game! Try to collect as many acorns as you can while making your way to the top of the tree, but don't get hit by any birds or apples.</p>
-                  </div>
-                  <div class="row">
-                    <p>
-                      <strong>Technologies:</strong> Phaser library and Express.
-                    </p>
-                  </div>
-                  <div class="row">
-                    <div class="miniLogos">
-                      <a href="#">
-                       <i class="logo fa fa-github"></i>
-                      </a>
-                      <a href="#">
-                       <i class="logo fa fa-globe"></i>
-                      </a>
-                    </div>
+                  <button type="button" ng-click="togglePreviews()" class="button preview"> {{previewButtonText}} </button>
+                  <iframe width="540" ng-show="previews" height="315" src="https://www.youtube.com/embed/UWUDjhpP8uw" frameborder="0" allowfullscreen></iframe>
+                  <div class="miniLogos">
+                    <a href="https://github.com/BertoOrt/twitch-streams/" target='_blank'>
+                     <i class="logo fa fa-github"></i>
+                    </a>
+                    <a href="https://infinite-woodland-7702.herokuapp.com/" target='_blank'>
+                     <i class="logo fa fa-globe"></i>
+                    </a>
                   </div>
                 </div>
               </div>

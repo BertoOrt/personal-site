@@ -43,4 +43,12 @@ $(document).ready(function () {
   $('#myModal').on('shown.bs.modal', function () {
     $('#myInput').focus()
   })
+
+  $('.modal').on('hidden.bs.modal', function(){
+    $("iframe").each(function() {
+      var src= $(this).attr('src');
+      $(this).attr('src',src);
+    });
+  });
+
 })

@@ -1,6 +1,17 @@
 app.controller('index', [ '$scope', function ($scope) {
   $scope.regular = false;
   $scope.d = null;
+  $scope.previewButtonText = "Preview";
+  $scope.previews = false;
+  $scope.togglePreviews = function () {
+    if ($scope.previews) {
+      $scope.previews = false;
+      $scope.previewButtonText = "Preview";
+    } else {
+      $scope.previews = true;
+      $scope.previewButtonText = "Hide";
+    }
+  }
   $scope.everyone = function () {
     $scope.regular = true;
   }
